@@ -1,0 +1,12 @@
+#Untar sample_data
+tar xzf sample_data.tar.gz
+
+#Generate examples (png files)
+python analysis.py
+
+#Export the data structure and play!
+python
+>>> import analysis
+>>> data=analysis.get_data()
+
+#Examples of how to use the get_ and plot_ commands are in plot_master() function of analysis.py
