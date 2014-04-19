@@ -9,4 +9,12 @@ python
 >>> import analysis
 >>> data=analysis.get_data()
 
+#To access the full data set...
+#1) Untar
+tar xzf data.tar.gz
+#2) Export the data structure and play...
+python
+>>> import analysis
+>>> data=analysis.get_data(crawl_location='data/*.txt')
+
 #Examples of how to use the get_ and plot_ commands are in plot_master() function of analysis.py
