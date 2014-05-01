@@ -43,7 +43,7 @@ attribListAbrv=np.sort(attribDict.values())
 #Attribute1 (e.g. Hope)
 #...
 #Attribute24 (e.g. Love of learning)
-def get_data(crawl_location='sample_data/*.txt'):
+def get_data(crawl_location='random_data/*.txt'):
     data=[]
     filelist = glob.glob(crawl_location)
     for file in filelist:

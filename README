@@ -1,3 +1,8 @@
+1 May 2014:
+At the request of the VIA Institute on Character, I have taken down the data files.
+I have generated random data in random_data.tar.gz, as a proof of principle for the analysis scripts.
+
+
 #Untar sample_data
 tar xzf sample_data.tar.gz
 
@@ -8,13 +13,15 @@ python analysis.py
 python
 >>> import analysis
 >>> data=analysis.get_data()
+>>> analysis.plot_master(data) #Plot everything
 
 #To access the full data set...
-#1) Untar
+#1) Untar (Warning...165M)
 tar xzf data.tar.gz
 #2) Export the data structure and play...
 python
 >>> import analysis
 >>> data=analysis.get_data(crawl_location='data/*.txt')
+>>> analysis.plot_master(data) #Plot everything
 
 #Examples of how to use the get_ and plot_ commands are in plot_master() function of analysis.py
